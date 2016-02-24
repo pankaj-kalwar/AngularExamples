@@ -3,3 +3,5 @@
 
 <!-- dependencies for 'common' module -->
 <script src="${pageContext.request.contextPath}/common/common.js"></script>
+<script src="${pageContext.request.contextPath}/app/scopes/scope.js"></script>
+<script src="${pageContext.request.contextPath}/app/my_directives/directiveHome.js"></script>

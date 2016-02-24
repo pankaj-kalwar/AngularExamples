@@ -1,7 +1,7 @@
 angular.module('app', [
     'ngRoute',
     'ngResource',
-    'play.common'
+    'play.common'    
  ]);
 
 angular.module('app').controller('PlayCtrl', ['$route', '$rootScope', '$scope','$window', 
@@ -9,3 +9,14 @@ angular.module('app').controller('PlayCtrl', ['$route', '$rootScope', '$scope','
         $rootScope.clientContextPath = clientContextPath;
     }
 ]);
+/*
+angular.module('app').config('$routeProvider', function($routeProvider){
+	$routeProvider
+		.when("/home", function(){
+			templateUrl : 
+		}).otherwise(function(){
+			
+		});
+});
+
+*/
