@@ -1,0 +1,16 @@
+<div>
+	
+	<div ng-controller="deviceDetectCtrl as vm">
+            <p>You are using <b>{{vm.data.browser}}</b> on <b>{{vm.data.os}} ({{vm.data.os_version}})</b>.</p>
+            <p>Your <b>{{vm.data.browser}}</b> version is <b>{{vm.data.browser_version}}</b></p>
+            <p>Device - <b></b>{{vm.data.device}}</p>
+        </div>
+        	
+	<div>
+		<input type="file" file-model="myFile" />
+		<button ng-click="uploadFile()">upload me</button>
+	</div>
+	
+	
+	
+</div>

@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>nl.sns</groupId>
+  <artifactId>AngularFileUpload_Mobile_POC</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
+  
+  <name>AngularFileUpload Mobile POC</name>
+    <description>This POC used to detect the settings of file permissions while uploading a document from browser specific to mobile devices.</description>
+    
+    <profiles>
+        <profile>
+            <build>
+                <finalName>ngFileUploadPoc</finalName>
+            </build>
+        </profile>
+    </profiles>
+    <dependencies>
+         <dependency>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+            <version>1.0.2.Final</version>
+                <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
