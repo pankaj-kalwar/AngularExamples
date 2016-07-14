@@ -7,14 +7,12 @@
 	</head>
 	<body >
 		<div>
-			<header><div>Angular playground 22...</div></header>
+			<header><div>Angular playground 11...</div></header>
     		<main role="main" class="clear">
     			<br /><br /><br />
     			<div>
     				<h1><a href="#/scopes" >Scopes</a></h1><br />
-    				<h1><a href="#/testDirectives" >Directives</a></h1><br />
-    				<h1><a href="#/product" >Products</a></h1>
-    				<h1><a href="#/filterData" >Filter</a></h1>
+    				<h1><a href="#/testDirectives" >Directives</a></h1>
     			</div>
         		<div id="display" ng-view=""></div>
         	</main>

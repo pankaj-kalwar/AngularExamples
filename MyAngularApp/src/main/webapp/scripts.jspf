@@ -5,8 +5,3 @@
 <script src="${pageContext.request.contextPath}/common/common.js"></script>
 <script src="${pageContext.request.contextPath}/app/scopes/scope.js"></script>
 <script src="${pageContext.request.contextPath}/app/my_directives/directiveHome.js"></script>
-
-<!-- Product lib -->
-<script src="${pageContext.request.contextPath}/app/product/productHome.js"></script>
-
-<script src="${pageContext.request.contextPath}/app/example1_filter/filterData.js"></script>

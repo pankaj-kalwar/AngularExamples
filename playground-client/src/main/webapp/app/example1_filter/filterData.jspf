@@ -1,0 +1,41 @@
+<div>
+		
+	<!-- <div ng-repeat="data in datas | filter : name desc">
+		<span>{{data.Name}}</span>  || <span>{{data.city}}</span> <br /> 
+	</div> -->
+	
+	Search: <input ng-model="searchText">
+	<br />
+	Start Date : <input ng-model="startDate"> <br />
+	End Date : <input ng-model="endDate">
+	
+	
+	
+	<table id="searchTextResults">
+	  <tr>
+	  	<th>Name</th>
+	  	<th>Phone</th>
+	  	<th>Date</th>
+	  </tr>
+	 <!--  <tr ng-repeat="data in datas | filter:searchText">
+	    <td>{{data.Name}}</td>
+	    <td>{{data.city}}</td>
+	    <td>{{data.Date}}</td>
+	  </tr> -->
+	  <tr ng-repeat="data in datas | dateFilter : (startDate !== null || startDate !== undefined) && startDate : (endDate !== null || endDate !== undefined) && endDate">
+	    <td>{{data.Name}}</td>
+	    <td>{{data.city}}</td>
+	    <td>{{data.Date}}</td>
+	  </tr>
+	</table>
+	
+	
+	<div>
+		<div ng-repeat = "data in desktopData">
+			<span>{{data.Date}}</span>
+			<div ng-repeat="child in data.children">
+				<span>{{child.name}} || {{child.icon}}</span>
+			</div>
+		</div>
+	</div>
+</div>

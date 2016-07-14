@@ -3,5 +3,7 @@
  */
 angular.module('play.common',[
 	'play.scopes',
-	'play.directiveHome'
+	'play.directiveHome',
+	'play.productHome',
+	'play.filterData'
 ]);

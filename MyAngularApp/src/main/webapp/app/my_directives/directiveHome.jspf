@@ -1,0 +1,30 @@
+<div>
+	<pre>
+		Welcome to directive Dashboard
+	</pre>
+	<hr />
+	<div>
+		Form Directive Example 
+		
+		<form name="myForm" ng-controller=DirectiveFormCtrl class="my-form">
+		  userType: <input name="input" ng-model="userType" required>
+		  <span class="error" ng-show="myForm.input.$error.required">Required!</span><br>
+		  <code>userType = {{userType}}</code><br>
+		  <code>myForm.input.$valid = {{myForm.input.$valid}}</code><br>
+		  <code>myForm.input.$error = {{myForm.input.$error}}</code><br>
+		  <code>myForm.$valid = {{myForm.$valid}}</code><br>
+		  <code>myForm.$error.required = {{!!myForm.$error.required}}</code><br>
+		 </form>
+	</div>
+	<hr />
+	<div>
+		Custom Directive Example...<br />
+		<pk-directive-element></pk-directive-element>
+		<br />
+		<span pk-directive-attribute></span>
+		<br />
+		<span pk-directive info="{{userType}}"></span>
+				
+	</div>
+
+</div>

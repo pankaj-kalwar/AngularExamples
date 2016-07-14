@@ -1,3 +1,30 @@
 <div>
-	My Product Home Page
+	My Product Home Page <br /> <span ng-repeat="book in books">
+		{{book.name}} - {{book.description}} - {{book.price}} <br />
+	</span>
+
+	<script>
+	</script>
+	<form name="myForm">
+		<!-- <label> <input type="radio" ng-model="color.name" value="red">
+			Red
+		</label><br /> <label> <input type="radio" ng-model="color.name"
+			ng-value="specialValue"> Green
+		</label><br /> <label> <input type="radio" ng-model="color.name"
+			value="blue"> Blue
+		</label><br />
+		<tt>color = {{color.name | json}}</tt>
+		<br /> -->
+		
+		
+		
+		<div ng-repeat="book in books">
+			<label> <input type="radio" ng-model="color.name" value="{{book.name}}">
+				{{book.name}}
+			</label>
+		</div>
+		<br />
+		<tt>Book = {{color | json}}</tt>
+	</form>
+
 </div>

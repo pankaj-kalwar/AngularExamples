@@ -12,7 +12,38 @@ angular.module("play.upload")
         fileUpload.uploadFileToUrl(file, uploadUrl);
     };
     
-    // Detect file input support
+    console.log("***************************");
+    console.log(window.localStorage);
+    console.log("***************************");
+    
+    // Block of code for experiment
+    
+    /*if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
+    	  console.log("enumerateDevices() not supported.");
+    	  return;
+    	}
+
+    	// List cameras and microphones.
+
+    	navigator.mediaDevices.enumerateDevices()
+    	.then(function(devices) {
+    	  devices.forEach(function(device) {
+    	    console.log(device.kind + ": " + device.label +
+    	                " id = " + device.deviceId);
+    	  });
+    	});*/
+    
+    //console.log(navigator.mediaDevices);
+    //console.log(navigator.mozPermissionSettings);
+    
+    var myContact = navigator.contacts.create({"displayName": "Test User"});
+    myContact.note = "This contact has a note.";
+    console.log("The contact, " + myContact.displayName + ", note: " + myContact.note);
+    
+    // End Experiment
+    
+    
+    /*// Detect file input support
     $scope.isFileInputSupported = (function () {
       // Handle devices which falsely report support
       if (navigator.userAgent.match(/(Android (1.0|1.1|1.5|1.6|2.0|2.1))|(Windows Phone (OS 7|8.0))|(XBLWP)|(ZuneWP)|(w(eb)?OSBrowser)|(webOS)|(Kindle\/(1.0|2.0|2.5|3.0))/)) {
@@ -27,7 +58,7 @@ angular.module("play.upload")
     // Add 'fileinput' class to html element if supported
     if (isFileInputSupported) {
       document.documentElement.className += " fileinput";
-    }
+    }*/
     
 }])
 

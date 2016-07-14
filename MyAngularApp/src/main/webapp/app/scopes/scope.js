@@ -14,12 +14,6 @@ angular.module("play.scopes").config(['$routeProvider', function($routeProvider)
 		templateUrl : clientContextPath + "/app/my_directives/directiveHome.jspf",
 		//template : "<pre>Testing Scopes....</pre>",
 		controller : 'directiveHomeCtrl' 
-	}).when('/product', {
-		templateUrl : clientContextPath + "/app/product/productHome.jspf",
-		controller : 'productHomeCtrl' 
-	}).when('/filterData', {
-		templateUrl : clientContextPath + "/app/example1_filter/filterData.jspf",
-		controller : 'filterDataCtrl' 
 	}).otherwise({
 		redirectTo : "/"
 	});
@@ -27,4 +21,5 @@ angular.module("play.scopes").config(['$routeProvider', function($routeProvider)
 
 angular.module('play.scopes').controller('scopeDashboardCtrl', function(){
 	console.log("inside scope controller.");
+	alert(111);	
 });
